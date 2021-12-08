@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YERIEL MAIN</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    nav {
+      display: grid;
+      grid-template:
+        ". a a ." calc(25vh - 5vh)
+        ". . b b" 5vh
+        "c c b b" 35vh
+        "c c . ." 20px
+        ". d d ." calc(35vh - 20px);
+      grid-template-columns: 5vw 1fr 1fr 5vw;
+      height: 100vh;
+      margin: 0 auto;
+      width: 90vw;
+    }
+
+    nav > a {
+      background-position: center;
+      background-size: cover;
+      border: 2vw solid white;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+    }
+
+    h2 {
+      color: #fff;
+      font-family: mallory ultra, futura, sans-serif;
+      font-size: 10.5vw;
+      font-weight: 900;
+      line-height: 0.9;
+      margin: 0 2vw;
+      letter-spacing: -0.06em;
+      overflow: hidden;
+      position: relative;
+      text-transform: uppercase;
+    }
+
+    .yeriel {
+      background-image: url("images/yeriel.jpg");
+      grid-area: a;
+      margin-bottom: -5vw;
+      text-align: left;
+      z-index: 1;
+    }
+
+    .yeriel h2{
+      margin-top: -0.18em;
+      margin-left: 0;
+    }
+
+    .travel {
+      background-image: url("images/back01.jpg");
+      grid-area: c;
+      justify-content: flex-end;
+      text-align: left;
+      z-index: 10;
+    }
+
+    .travel h2 {
+      margin-bottom: -0.175em;
+    }
+
+    .study {
+      background-image: url("images/back03.jpg");
+      grid-area: b;
+      margin-left: -2vw;
+      text-align: right;
+      z-index: 5;
+    }
+
+    .study h2 {
+      margin-top: -0.175em;
+    }
+
+    .v-league {
+      background-image: url("images/v-league.jpeg");
+      grid-area: d;
+      justify-content: flex-end;
+      margin-top: -4vw;
+      text-align: right;
+      z-index: 1;
+    }
+
+
+    .v-league h2 {
+      margin-bottom: -0.175em;
+    }
+
+    .main-content {
+      background: white;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      z-index: 100;
+    }
+
+    .main-content h1 {
+      opacity: 0;
+      font-family: mallory, futura, sans-serif;
+      font-size: 20vw;
+      font-weight: 800;
+      letter-spacing: -0.07em;
+      line-height: 0.8;
+      margin-left: -0.04em;
+      margin-top: -0.225em;
+      text-transform: uppercase;
+    }
+
+    .close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="yeriel.html" class="yeriel" style="--bg: #006888">
+        <h2>YERIEL</h2>
+      </a>
+      <a href="Travel.html" class="travel" style="--bg: #87fffb">
+        <h2>travel</h2>
+      </a>
+      <a href="Study.html" class="study" style="--bg: #ffe742">
+        <h2>study</h2>
+      </a>
+      <a href="V-league.html" class="v-league">
+        <h2>v-league</h2>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>

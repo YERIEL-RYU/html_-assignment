@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>V-league</title>
+  <link rel="stylesheet" href="css/v-league.css">
+</head>
+<body>
+  <div class="container-wrap">
+  <h1>12월 V리그 일정표</h1>
+  <marquee width="100%" direction="left">
+    <span>매주 월요일은 경기가 없습니다.</span>
+    <span>평일 경기 오후 7시</span>
+    <span>주말 남자부 경기 오후 2시</span>
+    <span>주말 여자부 경기 오후 4시</span>
+  </marquee>
+  <div style="display: flex;flex-direction: row-reverse; justify-content: center;margin-top: 20px;">
+    <div class="calendar-base">
+      <div class="year">2021</div>
+      <div class="months">
+        <span >Dec</span>
+      </div>
+      <hr class="month-line" />
+      <div class="days">    
+        <span>SUN</span>
+        <span>MON</span>
+        <span>TUE</span>
+        <span>WED</span>
+        <span>THU</span>
+        <span>FRI</span>
+        <span>SAT</span>
+      </div>
+      <div class="num-dates">
+        <div class="week">
+          <span class="gray">28</span>
+          <span class="gray">28</span>
+          <span class="gray">28</span>
+          <span class="day-num" id="01-3">01</span>
+          <span class="day-num" id="02-4">02</span>
+          <span class="day-num" id="03-5">03</span>
+          <span class="day-num" id="04-6">04</span>
+        </div>
+        <div class="week">
+          <span class="day-num" id="05-0">05</span>
+          <span class="day-num" id="06-1">06</span>
+          <span class="day-num" id="07-2">07</span>
+          <span class="day-num" id="08-3">08</span>
+          <span class="day-num" id="09-4">09</span>
+          <span class="day-num" id="10-5">10</span>
+          <span class="day-num" id="11-6">11</span>
+        </div>
+        <div class="week">
+          <span class="day-num" id="12-0">12</span>
+          <span class="day-num" id="13-1">13</span>
+          <span class="day-num" id="14-2">14</span>
+          <span class="day-num" id="15-3">15</span>
+          <span class="day-num" id="16-4">16</span>
+          <span class="day-num" id="17-5">17</span>
+          <span class="day-num" id="18-6">18</span>
+        </div>
+        <div class="week">
+          <span class="day-num" id="19-0">19</span>
+          <span class="day-num" id="20-1">20</span>
+          <span class="day-num" id="21-2">21</span>
+          <span class="day-num" id="22-3">22</span>
+          <span class="day-num" id="23-4">23</span>
+          <span class="day-num" id="24-5">24</span>
+          <span class="day-num" id="25-6">25</span>
+        </div>
+        <div class="week"> 
+          <span class="day-num" id="26-0">26</span>
+          <span class="day-num" id="27-1">27</span>
+          <span class="day-num" id="28-2">28</span>
+          <span class="day-num" id="29-3">29</span>
+          <span class="day-num" id="30-4">30</span>
+          <span class="day-num" id="31-5">31</span>
+          <span class="gray">01</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="calendar-left">
+      <div class="num-date" id="date">25</div>
+      <div class="day" id="day">SATURDAY</div>
+      <div class="current-events">
+        <ul id="schedule">
+        </ul>
+        <a href="https://sports.news.naver.com/volleyball/schedule/index"><span class="posts">일정 더보기</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="js/v-league.js"></script>
+</body>
+</html>
